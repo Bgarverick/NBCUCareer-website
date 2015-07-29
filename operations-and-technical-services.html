@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+	<script src="scripts/plax.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<title>OTS</title>
+	<style type="text/css">	
+		div#shell {
+			display: block;
+			position: relative;
+			margin: 5px auto;
+			height: 400px;
+			width: 800px;
+			/*max-height:100%;*/
+			/*max-width: calc(100% - 200px);*/
+		}
+		div#shell{
+			z-index: 1;
+		}  
+		.locations{
+			background-color: #6B63CF;
+		}
+		img#OTS {
+			position: absolute;
+			top: 25px;
+			left: 90px;
+			z-index: 2;
+
+		}
+		img#gray {
+			position: absolute;
+			top: 35px;
+			left: 32px;
+			z-index: 1;
+
+		}
+		.btn-apply{
+			background-color: #AAA5E7;
+			border-color: #938DE7
+		}
+		.btn-apply:hover{
+			background-color: #6B63CF;
+			border-color: #938DE7
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<!-- Parallax Effect Header -->
+		<div class="row">
+			<div class="pagination-centered" id="shell" >
+				<img src="images/OTS-LOGO.png" id="OTS" height="50%">
+				<img src="images/light-gray-gradient.jpg" id="gray" width="100%" height="70%">
+			</div>
+		</div>
+		<!-- End Parralax Effect Header -->
+
+		<!-- Header i.e. Locations and Quote -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-9">
+					<blockquote>
+						<p>It takes a lot of talented people to make the magic happen at NBCUniversal. Our Operations and Technical Services teams perform mission-critical roles across NBCUniversa's portfolio of broadcast, vable and film businesses, to ensure we keep our positionas the leader in media technology.</p>
+					</blockquote>
+				</div>
+				<div class="col-xs-3">
+					<div class="row locations">
+						<ul class="list-group">
+							<li class="text-right">New York</li>
+							<li class="text-right">Englewood Cliffs</li>
+							<li class="text-right">Universal City</li>
+							<li class="text-right">Los Angeles</li>
+							<li class="text-right">Centennial</li>
+							<li class="text-right">London</li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<button type="button" class="btn btn-apply" style="float: right;">Apply</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Header  Locations and Quote -->
+		<div class="container">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								Collapsible Group Item #1
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							ONe Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								Collapsible Group Item #2
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							Two Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								Collapsible Group Item #3
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							Three Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#OTS').plaxify({"xRange":10,"yRange":10})
+		$('#gray').plaxify({"xRange":5,"yRange":5,"invert":true})
+		$.plax.enable()
+	});
+
+</script>
