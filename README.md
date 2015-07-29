@@ -1,14 +1,15 @@
 # NBCU Website
 ## TODO
-#### [ ] O&TS Webpage -> @kcajmagic
+#### O&TS Webpage
+@kcajmagic
 - [ ] CSS
 - [ ] HTML
 
-#### [ ] NexTech Webpage
+#### NexTech Webpage
 
 - [ ] CSS
- - [ ] HTML
-    
- #### [ ] C2C
+- [ ] HTML
+
+#### C2C
 - [ ] CSS
 - [ ] HTML
