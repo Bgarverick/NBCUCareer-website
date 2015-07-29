@@ -35,6 +35,9 @@
 			top: 25px;
 			left: 90px;
 			z-index: 2;
+			max-height: 50%;
+			max-width: 50%;
+			width: auto;
 
 		}
 		img#gray {
@@ -46,11 +49,20 @@
 		}
 		.btn-apply{
 			background-color: #AAA5E7;
-			border-color: #938DE7
+			border-color: #938DE7;
+
 		}
 		.btn-apply:hover{
 			background-color: #6B63CF;
 			border-color: #938DE7
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			color: #ffffff;
+			text-shadow: -1px 2px 3px #555;
+			padding-right: 5px;
 		}
 	</style>
 
@@ -77,24 +89,27 @@
 					</blockquote>
 				</div>
 				<div class="col-xs-3">
-					<div class="row locations">
-						<ul class="list-group">
-							<li class="text-right">New York</li>
-							<li class="text-right">Englewood Cliffs</li>
-							<li class="text-right">Universal City</li>
-							<li class="text-right">Los Angeles</li>
-							<li class="text-right">Centennial</li>
-							<li class="text-right">London</li>
+					<div class="row">
+						<ul class="list-group locations">
+							<li class="text-right">New York  </li>
+							<li class="text-right">Englewood Cliffs  </li>
+							<li class="text-right">Universal City  </li>
+							<li class="text-right">Los Angeles  </li>
+							<li class="text-right">Centennial  </li>
+							<li class="text-right">London  </li>
 						</ul>
 					</div>
 
-					<div class="row">
-						<button type="button" class="btn btn-apply" style="float: right;">Apply</button>
-					</div>
+					<!-- <div class=""> -->
+						<!-- <div class="span6" style="text-align:center"> -->
+							<button type="button" class="btn btn-apply" style="width:100%">Apply</button>
+						<!-- </div> -->
+					<!-- </div> -->
 
 				</div>
 			</div>
 		</div>
+		<div class="row"><p> </p></div>
 		<!-- End Header  Locations and Quote -->
 		<div class="container-fluid">
 			<div class="row">
