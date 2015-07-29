@@ -9,13 +9,18 @@
 	<script src="scripts/bootstrap.min.js"></script>
 	<title>O&amp;TS</title>
 	<style type="text/css">	
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
 		div#shell {
 			display: block;
 			position: relative;
 			margin: 5px auto;
 			height: 400px;
-			width: 800px;
+			width: 100%;
 			overflow: hidden;
+			background-color: #000000
 			/*max-height:100%;*/
 			/*max-width: calc(100% - 200px);*/
 		}
@@ -34,8 +39,8 @@
 		}
 		img#gray {
 			position: absolute;
-			top: 0px;
-			left: 0px;
+			top: -10px;
+			left: -10px;
 			z-index: 1;
 
 		}
@@ -51,18 +56,20 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<!-- Parallax Effect Header -->
 		<div class="row">
-			<div class="pagination-centered" id="shell" >
-				<img src="images/OTS-LOGO.png" id="OTS" height="50%">
-				<img src="images/light-gray-gradient.jpg" id="gray" width="100%" height="100%">
+			<div class="col-lg-12">
+				<div id="shell">
+					<img src="images/OTS-LOGO.png" id="OTS" width="40%">
+					<img src="images/light-gray-gradient.jpg" id="gray" width="120%" height="120%">
+				</div>
 			</div>
 		</div>
 		<!-- End Parralax Effect Header -->
 
 		<!-- Header i.e. Locations and Quote -->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-9">
 					<blockquote>
@@ -89,53 +96,56 @@
 			</div>
 		</div>
 		<!-- End Header  Locations and Quote -->
-		<div class="container">
-			<div class="panel-group" id="accordion">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-								Business Services
-							</a>
-						</h4>
-					</div>
-					<div id="collapseOne" class="panel-collapse collapse in">
-						<div class="panel-body">
-							Our NBCUniversal Business Services organization includes corporate service functions such as environmental health &amp; safety, security &amp; crisis management, global facility operations, transportation, retail operations, energy programs and food services. Servicing clients at NBCUniversal’s global facilities, the business services team helps coordinate efforts and programs among local operations, while ensuring consistent delivery of a high-level of service to our broad portfolio of internal clients.
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xd-12">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										Business Services
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+								<div class="panel-body">
+									Our NBCUniversal Business Services organization includes corporate service functions such as environmental health &amp; safety, security &amp; crisis management, global facility operations, transportation, retail operations, energy programs and food services. Servicing clients at NBCUniversal’s global facilities, the business services team helps coordinate efforts and programs among local operations, while ensuring consistent delivery of a high-level of service to our broad portfolio of internal clients.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-								East Coast TV  &amp; On-Air Operations
-							</a>
-						</h4>
-					</div>
-					<div id="collapseTwo" class="panel-collapse collapse">
-						<div class="panel-body">
-							Our East Coast TV &map; On-Air Operations organization supports the production, post-production, and distribution of content across our company’s expansive portfolio of news and entertainment brands. Servicing more than broadcast, the East Coast TV &amp; On-Air Operations team provides production, graphics, and distribution support. Helping clients successfully release content across the ever-changing media landscape, it includes TV everywhere, electronic sell through, streaming, and more. The team is comprised of broadcast operations, studio operations, graphics, engineering and facilities.
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										East Coast TV  &amp; On-Air Operations
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									Our East Coast TV &map; On-Air Operations organization supports the production, post-production, and distribution of content across our company’s expansive portfolio of news and entertainment brands. Servicing more than broadcast, the East Coast TV &amp; On-Air Operations team provides production, graphics, and distribution support. Helping clients successfully release content across the ever-changing media landscape, it includes TV everywhere, electronic sell through, streaming, and more. The team is comprised of broadcast operations, studio operations, graphics, engineering and facilities.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-								Field &amp; Production Operations
-							</a>
-						</h4>
-					</div>
-					<div id="collapseThree" class="panel-collapse collapse">
-						<div class="panel-body">
-							Our Field &amp; Production Operations is a dynamic and multifaceted organization. It includes News production at 30 Rock as well as all domestic and international news bureaus, satellite transmission and data operations. It incorporates an international team of engineers and camera crews who provide day-to-day technical support and live-remote origination for NBC News worldwide. Striving to be first in class and first on the ground, the expansive editing organization, media management, enhanced streaming techniques and archival departments of NBC News are key to its success. The Field &amp; Production Operations team closely aligns NBC News production with post-production assets. The team also looks to customize production, field and transmission operations across NBCUniversal brands. It provides superior live/ live-to-tape transmission capabilities for NBC News and NBC family members such as CNBC, Telemundo, Access Hollywood, NBC Sports, Weather, NBC Entertainment, and Peacock Productions, as well as for non-NBC customers.
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										Field &amp; Production Operations
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									Our Field &amp; Production Operations is a dynamic and multifaceted organization. It includes News production at 30 Rock as well as all domestic and international news bureaus, satellite transmission and data operations. It incorporates an international team of engineers and camera crews who provide day-to-day technical support and live-remote origination for NBC News worldwide. Striving to be first in class and first on the ground, the expansive editing organization, media management, enhanced streaming techniques and archival departments of NBC News are key to its success. The Field &amp; Production Operations team closely aligns NBC News production with post-production assets. The team also looks to customize production, field and transmission operations across NBCUniversal brands. It provides superior live/ live-to-tape transmission capabilities for NBC News and NBC family members such as CNBC, Telemundo, Access Hollywood, NBC Sports, Weather, NBC Entertainment, and Peacock Productions, as well as for non-NBC customers.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	
@@ -145,9 +155,33 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
+		//resizePrallax();
 		$('#OTS').plaxify({"xRange":10,"yRange":10})
 		$('#gray').plaxify({"xRange":5,"yRange":5,"invert":true})
 		$.plax.enable()
 	});
 
+// 	var delay = (function(){
+// 		var timer = 0;
+// 		return function(callback, ms){
+// 			clearTimeout (timer);
+// 			timer = setTimeout(callback, ms);
+// 		};
+// 	})();
+
+// 	$(window).resize(function() {
+// 		$.plax.disable();
+// 		//delay(function(){
+// 			resizePrallax();
+// 			$.plax.enable();
+// 	//	}, 100);
+// });
+
+// 	function resizePrallax(){
+// 		var newSize = $(document).width() * .9;
+// 		//var newHeight = $(document).height * .20;
+// 		$("#shell").width(newSize)
+// 		//$("shell")
+
+// 	}
 </script>
