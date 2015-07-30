@@ -20,7 +20,7 @@
 			height: 400px;
 			width: 100%;
 			overflow: hidden;
-			background-color: #000000
+			/*background-color: #000000*/
 			/*max-height:100%;*/
 			/*max-width: calc(100% - 200px);*/
 		}
@@ -167,6 +167,62 @@
 								</div>
 							</div>
 						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+										Information Technology
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse">
+								<div class="panel-body">
+									Our Information Technology team is responsible for NBCUniversal’s global systems, infrastructure and operations for the company’s worldwide media portfolio. Part of the Operations &amp; Technical Services (O&amp;TS) organization, the Information Technology portfolio includes systems for all corporate functions, Domestic and International Film, Home Entertainment, Theme Parks, Cable News &amp; Entertainment, Television Production &amp; Distribution and Global Television Networks. The team strives to provide business technology services and high-tech talent to support the needs and expectations of the various end-users and customer groups enabling them to successfully operate their businesses.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+										International Operations &amp; Technology
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse">
+								<div class="panel-body">
+									Our International O&amp;TS team supports all business units that form the International division of NBCUniversal. This includes groups that support TV production, channels and distribution, film production and distribution, news, information technology, environmental health and safety and security. The international group works closely with our domestic counterparts, especially in the areas of broadcast operations and IT, on a number of strategic initiatives leveraging the scale of NBCUniversal while capitalising on opportunities in international markets. Click here to learn even more about our International O&amp;TS team.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+										Media Products &amp; Advanced Technology
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse">
+								<div class="panel-body">
+									Working with all of NBCUniversal’s brands, our Media Products &amp; Advanced Technology team provides clients with the tools and technology needed to serve audiences in a digital world. The team strives to ensure better business through better technology by creating tools and talent for our diverse media portfolio, helping brands thrive in our ever-changing technological landscape. Focusing on product strategy, development, design and technical architecture, the client-centric team also evaluates emerging platforms and shares knowledge and best practices across NBCUniversal and business partners. Additionally, the team continues our work in developing industry technology standards; informing regulatory activity and driving research and development in business critical areas.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+										Studio Operations
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse">
+								<div class="panel-body">
+									Based on the West Coast, our NBCUniversal Studios Operations organization delivers quality operations focusing on talent, technology, and extraordinary customer service. The division offers stages and backlot locations, cutting-edge production and post-production facilities and services, special events, and marketing. Studio Operations is responsible for providing office and production support facilities, as well as maintaining all buildings, grounds, roads, and utility infrastructure. The team supports and partners with both our internal and external clients, while developing and executing a strategic plan that ensures the long-term success of our premier Studio facility. The team works closely with NBCUniversal’s theme park division, Universal Studios Hollywood, and our Global Real Estate teams on the development of our strategic Evolution Plan for the Universal Lot. In addition, Studio Operations includes our physical and digital vaults, film preservation, technical services, and Universal Studios Digital Services.With operations oversight of 40 production and post-production support departments and facilities, new technologies for DI, and a virtual stage environment, NBCUniversal Studio Operations is considered the leader in its field.
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -180,33 +236,25 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		//resizePrallax();
-		$('#OTS').plaxify({"xRange":10,"yRange":10})
-		$('#gray').plaxify({"xRange":5,"yRange":5,"invert":true})
-		$.plax.enable()
+		resizePrallax();
+		$('#OTS').plaxify({"xRange":10,"yRange":10});
+		$('#gray').plaxify({"xRange":5,"yRange":5,"invert":true});
+		$.plax.enable();
 	});
 
-// 	var delay = (function(){
-// 		var timer = 0;
-// 		return function(callback, ms){
-// 			clearTimeout (timer);
-// 			timer = setTimeout(callback, ms);
-// 		};
-// 	})();
+	$(window).resize(function() {
+		$.plax.disable();
+		resizePrallax();
+		$.plax.enable();
+	});
 
-// 	$(window).resize(function() {
-// 		$.plax.disable();
-// 		//delay(function(){
-// 			resizePrallax();
-// 			$.plax.enable();
-// 	//	}, 100);
-// });
+	function resizePrallax(){
+		var potentialSize = $(window).height() * $(window).width() / (400 * 3);
+		var newSize = potentialSize > 400 ? 400 : potentialSize;
+		//console.log(newSize + " " + potentialSize);
+		//var newHeight = $(document).height * .20;
+		$("#shell").height(newSize);
+		//$("shell")
+	}
 
-// 	function resizePrallax(){
-// 		var newSize = $(document).width() * .9;
-// 		//var newHeight = $(document).height * .20;
-// 		$("#shell").width(newSize)
-// 		//$("shell")
-
-// 	}
 </script>
