@@ -49,5 +49,6 @@ git pull
 3. Share button
 4. Pictures in dropdowns 
 5. Make the bar clickable not just name on bar
-	These are some issues I (Ben) think we need to resolve on the current O&TS Page
+
+These are some issues I (Ben) think we need to resolve on the current O&TS Page
 								
