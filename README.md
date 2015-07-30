@@ -4,7 +4,7 @@
 @kcajmagic
 - [ ] CSS
 - [ ] HTML
-####### Issues still on O&TS page
+##### Issues still on O&TS page
 1.  [ ] New Text
 2.  [ ] Campus 2 Career Logo 
 3.  [ ] Share button
