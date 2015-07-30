@@ -11,6 +11,8 @@
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 	<script src="scripts/plax.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
+	<link href="assets/css/video-default.css" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
 	<title>O&amp;TS</title>
 	<link rel="stylesheet" href="stylesheets/operations-and-technical-services.css">
 
@@ -63,11 +65,11 @@
 
 		<!-- Row Spacing -->
 		<div class="row"><p> </p></div> 
-
+		
 		<!-- End Header  Locations and Quote -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-10">
+				<div class="col-sm-6">
 					<div class="panel-group accordion-caret" id="accordion">
 						<div class="panel panel-default">
 							<div class="panel-heading">
@@ -125,7 +127,7 @@
 							</div>
 							<div id="collapseFour" class="panel-collapse collapse">
 								<div class="panel-body">
-									Our Information Technology team is responsible for NBCUniversal’s global systems, infrastructure and operations for the company’s worldwide media portfolio. Part of the Operations &amp; Technical Services (O&amp;TS) organization, the Information Technology portfolio includes systems for all corporate functions, Domestic and International Film, Home Entertainment, Theme Parks, Cable News &amp; Entertainment, Television Production &amp; Distribution and Global Television Networks. The team strives to provide business technology services and high-tech talent to support the needs and expectations of the various end-users and customer groups enabling them to successfully operate their businesses.
+									Our Information Technology team is responsible for NBCUniversa’s global systems, infrastructure and operations for the company’s worldwide media portfolio. Part of the Operations &amp; Technical Services (O&amp;TS) organization, the Information Technology portfolio includes systems for all corporate functions, Domestic and International Film, Home Entertainment, Theme Parks, Cable News &amp; Entertainment, Television Production &amp; Distribution and Global Television Networks. The team strives to provide business technology services and high-tech talent to support the needs and expectations of the various end-users and customer groups enabling them to successfully operate their businesses.
 								</div>
 							</div>
 						</div>
@@ -176,24 +178,38 @@
 						</div>
 					</div>
 				</div>
-				<div class="hidden-xs  col-xs-2">
-					<div class="jumbotron">
-						<video width="100%" poster="images/poster.png" id="videoPlayer">
+				<div class="col-sm-6">
+
+					<!-- <div class="videoUiWrapper thumbnail">
+						<video width="370" height="214" id="demo1">
 							<source src="videos/STEM.mp4" type="video/mp4">
+								Your browser does not support the video tag.
 							</video>
-							<div class="videoControls">
-								<a href="#" class="btnPlay"><span class="glyphicon glyphicon-play"></span></a>
-								<div class="videoTime">
+						</div> -->
+						<div class="jumbotron">
+							<video width="100%" poster="images/poster.png" id="videoPlayer">
+								<source src="videos/STEM.mp4" type="video/mp4"\>
+								</video>
+								<div class="videoControls">
+									<a class="btnPlay"><span class="glyphicon glyphicon-play"></span></a>
+							<!-- 	<div class="videoTime">
 									<span class="current"></span>/<span class="duration"></span>
-								</div>
-								<a href="#" class="btnMute"><span class="glyphicon glyphicon-volume-up"></span></a>
-								<a href="#" class="btnFullscreen"><span class="glyphicon glyphicon-fullscreen"></span></a>
+								</div> -->
+								<a class="btnMute"><span class="glyphicon glyphicon-volume-up"></span></a>
+								<a class="btnFullscreen"><span class="glyphicon glyphicon-fullscreen"></span></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container-fluid">
+		<!-- Footer -->
+		<hr />
+		<footer>
+			<p>Coded by Team 3 </p>
+		</footer>
 	</div>
 </body>
 </html>
@@ -223,28 +239,28 @@
 			}
 			return false;
 		})
-		videoPlayer.on('timeupdate', function() {
-			$('.current').text(Math.round(videoPlayer[0].currentTime));
-		});
-		videoPlayer.on('loadedmetadata', function() {
-			$('.duration').text(Math.round(videoPlayer[0].duration));
-		});
-		$('.btnMute').click(function() {
-			if (videoPlayer[0].muted == false) {
-				videoPlayer[0].muted = true;
-				$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
-			} else {
-				videoPlayer[0].muted = false;
-				$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
-			}
-		});
-		$('.btnFullscreen').on('click', function() {
-			videoPlayer[0].webkitEnterFullscreen();
-			videoPlayer[0].mozRequestFullScreen();
-			return false;
-		});
-
+		// videoPlayer.on('timeupdate', function() {
+		// 	$('.current').text(Math.round(videoPlayer[0].currentTime));
+		// });
+	videoPlayer.on('loadedmetadata', function() {
+		$('.duration').text(Math.round(videoPlayer[0].duration));
 	});
+	$('.btnMute').click(function() {
+		if (videoPlayer[0].muted == false) {
+			videoPlayer[0].muted = true;
+			$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
+		} else {
+			videoPlayer[0].muted = false;
+			$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
+		}
+	});
+	$('.btnFullscreen').on('click', function() {
+		videoPlayer[0].webkitEnterFullscreen();
+		videoPlayer[0].mozRequestFullScreen();
+		return false;
+	});
+
+});
 
 $(window).resize(function() {
 	$.plax.disable();
