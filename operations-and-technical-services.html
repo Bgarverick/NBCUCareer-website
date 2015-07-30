@@ -7,10 +7,14 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" href="stylesheets/jssocials-theme-classic.css">
+	<link rel="stylesheet" href="stylesheets/jssocials.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 	<script src="scripts/plax.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/jssocials.min.js"></script>
 	<title>O&amp;TS</title>
 	<link rel="stylesheet" href="stylesheets/operations-and-technical-services.css">
 
@@ -21,6 +25,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div id="shell">
+					<div id="share"></div>
 					<img src="images/OTS-LOGO.png" id="OTS" width="40%">
 					<img src="images/light-gray-gradient.jpg" id="gray" width="120%" height="120%">
 				</div>
@@ -202,6 +207,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="container-fluid">
 		<!-- Footer -->
 		<hr />
@@ -216,6 +222,7 @@
 	$(document).ready(function() {
 		resizePrallax();
 		$('#OTS').plaxify({"xRange":20,"yRange":20});
+		//$('#share').plaxify({"xRange":30,"yRange":30});
 		$('#gray').plaxify({"xRange":10,"yRange":10,"invert":true});
 		$.plax.enable();
 		// To Actualy Center Image
@@ -226,6 +233,12 @@
 		//Randomize Color
 		randomizeColors();
 
+		// Set Up Social
+		$("#share").jsSocials({
+			showLabel: false,
+			showCount: false,
+			shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+		});
 
 		// Set Up Video
 		var videoPlayer = $('#videoPlayer');
@@ -240,29 +253,30 @@
 				$('.glyphicon-pause').attr('class', 'glyphicon glyphicon-play');
 			}
 			return false;
-		})
+		});
+
 		// videoPlayer.on('timeupdate', function() {
 		// 	$('.current').text(Math.round(videoPlayer[0].currentTime));
-		// });
-	videoPlayer.on('loadedmetadata', function() {
-		$('.duration').text(Math.round(videoPlayer[0].duration));
-	});
-	$('.btnMute').click(function() {
-		if (videoPlayer[0].muted == false) {
-			videoPlayer[0].muted = true;
-			$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
-		} else {
-			videoPlayer[0].muted = false;
-			$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
-		}
-	});
-	$('.btnFullscreen').on('click', function() {
-		videoPlayer[0].webkitEnterFullscreen();
-		videoPlayer[0].mozRequestFullScreen();
-		return false;
-	});
+		// });	
 
-});
+		videoPlayer.on('loadedmetadata', function() {
+			$('.duration').text(Math.round(videoPlayer[0].duration));
+		});
+		$('.btnMute').click(function() {
+			if (videoPlayer[0].muted == false) {
+				videoPlayer[0].muted = true;
+				$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
+			} else {
+				videoPlayer[0].muted = false;
+				$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
+			}
+		});
+		$('.btnFullscreen').on('click', function() {
+			videoPlayer[0].webkitEnterFullscreen();
+			videoPlayer[0].mozRequestFullScreen();
+			return false;
+		});
+	});
 
 $(window).resize(function() {
 	$.plax.disable();
@@ -285,6 +299,7 @@ function resizePrallax(){
 		var windowWidth = $(window).width();
 
 		$("#OTS").center(true);
+		//$("#share").center(true);
 		//$('#OTS').css({top: (windowHeight/2) - ($('#OTS').height()/2) + "px", left: (windowWidth/2) - ($('#OTS').width()/2) + "px", position:'absolute'});
 
 	}
