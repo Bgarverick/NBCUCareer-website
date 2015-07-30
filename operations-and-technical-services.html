@@ -237,6 +237,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		resizePrallax();
+		centerOTSLogo();
 		$('#OTS').plaxify({"xRange":10,"yRange":10});
 		$('#gray').plaxify({"xRange":5,"yRange":5,"invert":true});
 		$.plax.enable();
@@ -245,6 +246,7 @@
 	$(window).resize(function() {
 		$.plax.disable();
 		resizePrallax();
+		centerOTSLogo();
 		$.plax.enable();
 	});
 
@@ -255,6 +257,29 @@
 		//var newHeight = $(document).height * .20;
 		$("#shell").height(newSize);
 		//$("shell")
+	}
+
+	function centerOTSLogo(){
+		var windowHeight = $(window).height();
+		var windowWidth = $(window).width();
+
+		$("#OTS").center(true);
+		//$('#OTS').css({top: (windowHeight/2) - ($('#OTS').height()/2) + "px", left: (windowWidth/2) - ($('#OTS').width()/2) + "px", position:'absolute'});
+
+	}
+
+	jQuery.fn.center = function(parent) {
+		if (parent) {
+			parent = this.parent();
+		} else {
+			parent = window;
+		}
+		this.css({
+			"position": "absolute",
+			"top": ((($(parent).height() - this.outerHeight()) / 2) + $(parent).scrollTop() + "px"),
+			"left": ((($(parent).width() - this.outerWidth()) / 2) + $(parent).scrollLeft() + "px")
+		});
+		return this;
 	}
 
 </script>
