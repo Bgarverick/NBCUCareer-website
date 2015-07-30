@@ -42,4 +42,12 @@ git pull
 7. Clone it to a file on your computer
 8. Push it by clicking sync in the gui
 
+
+## Issues still on O&TS page
+1. New Text
+2. Campus 2 Career Logo 
+3. Share button
+4. Pictures in dropdowns 
+5. Make the bar clickable not just name on bar
+	These are some issues I (Ben) think we need to resolve on the current O&TS Page
 								
