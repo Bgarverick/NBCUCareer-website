@@ -43,6 +43,12 @@
 		z-index: 1;
 
 	}
+	div#share {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 2;
+	}
 	.btn-apply{
 		background-color: #4B0082;
 		border-color: #0000000;

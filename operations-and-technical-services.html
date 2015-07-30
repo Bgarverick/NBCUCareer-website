@@ -7,6 +7,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap-social.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 	<script src="scripts/plax.js"></script>
@@ -23,6 +25,17 @@
 				<div id="shell">
 					<img src="images/OTS-LOGO.png" id="OTS" width="40%">
 					<img src="images/light-gray-gradient.jpg" id="gray" width="120%" height="120%">
+					<div id="share">
+						<a class="btn btn-social-icon btn-twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a class="btn btn-social-icon btn-facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a class="btn btn-social-icon btn-google">
+							<i class="fa fa-google"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -216,6 +229,7 @@
 	$(document).ready(function() {
 		resizePrallax();
 		$('#OTS').plaxify({"xRange":20,"yRange":20});
+		//$('#share').plaxify({"xRange":30,"yRange":30});
 		$('#gray').plaxify({"xRange":10,"yRange":10,"invert":true});
 		$.plax.enable();
 		// To Actualy Center Image
