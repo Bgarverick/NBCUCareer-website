@@ -24,6 +24,6 @@ git clone https://github.com/Bgarverick/NBCUCareer-website.git
 ```
 Wait to download file
 To update your current folder with content on github run the command
-```
+```terminal
 git pull
 ```
