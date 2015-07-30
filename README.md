@@ -41,7 +41,7 @@ git pull
 1. Start by showing hidden files and folders, to do this visit: http://windows.microsoft.com/en-us/windows/show-hidden-files#show-hidden-files=windows-7
 2. locate the .gitconfig under your username on your machine
 3. Open the file with a text editor 
-4. Under your email on line 8 add 
+4. At the end of the file add the following lines
 ```
 [http] 
 	proxy = http://proxy.inbcu.com:80 
