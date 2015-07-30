@@ -1,0 +1,63 @@
+/*!
+	Jack Murdock O&TS CSS
+	NBCUniversal Careers Page
+*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+div#shell {
+	display: block;
+	position: relative;
+	margin: 5px auto;
+	height: 400px;
+	width: 100%;
+	overflow: hidden;
+	/*background-color: #000000*/
+	/*max-height:100%;*/
+	/*max-width: calc(100% - 200px);*/
+}
+div#shell{
+	z-index: 1;
+}  
+.locations{
+	background-image: linear-gradient(90deg, #ffffff, #4B0082);
+	border-radius: 20px;
+}
+img#OTS {
+	position: absolute;
+	/*top: calc();*/
+	/*left: calc();*/
+	z-index: 2;
+	max-height: 50%;
+	max-width: 50%;
+	width: auto;
+
+}
+img#gray {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: 1;
+
+}
+.btn-apply{
+	background-color: #4B0082;
+	border-color: #0000000;
+	color: #ffffff;
+	text-shadow: -1px 2px 3px #555;
+}
+.btn-apply:hover{
+	background-color: #7D26CD;
+	border-color: #938DE7;
+	color: #ffffff;
+	text-shadow: -1px 2px 3px #555;
+}
+ul{
+	list-style: none;
+}
+li{
+	color: #ffffff;
+	text-shadow: -1px 2px 3px #555;
+	padding-right: 10px;
+}
