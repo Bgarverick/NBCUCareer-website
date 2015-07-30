@@ -42,12 +42,12 @@
 				<div class="col-xs-3">
 					<div class="row">
 						<ul class="list-group locations">
-							<li class="text-right">New York  </li>
-							<li class="text-right">Englewood Cliffs  </li>
-							<li class="text-right">Universal City  </li>
-							<li class="text-right">Los Angeles  </li>
-							<li class="text-right">Centennial  </li>
-							<li class="text-right">London  </li>
+							<li class="text-right">New York</li>
+							<li class="text-right">Englewood Cliffs</li>
+							<li class="text-right">Universal City</li>
+							<li class="text-right">Los Angeles</li>
+							<li class="text-right">Centennial</li>
+							<li class="text-right">London</li>
 						</ul>
 					</div>
 
@@ -67,17 +67,18 @@
 		<!-- End Header  Locations and Quote -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xd-12">
-					<div class="panel-group" id="accordion">
+				<div class="col-xs-10">
+					<div class="panel-group accordion-caret" id="accordion">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 										Business Services
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
-							<div id="collapseOne" class="panel-collapse collapse in">
+							<div id="collapseOne" class="panel-collapse collapse">
 								<div class="panel-body">
 									Our NBCUniversal Business Services organization includes corporate service functions such as environmental health &amp; safety, security &amp; crisis management, global facility operations, transportation, retail operations, energy programs and food services. Servicing clients at NBCUniversal’s global facilities, the business services team helps coordinate efforts and programs among local operations, while ensuring consistent delivery of a high-level of service to our broad portfolio of internal clients.
 								</div>
@@ -89,6 +90,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 										East Coast TV  &amp; On-Air Operations
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse">
@@ -103,6 +105,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 										Field &amp; Production Operations
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse">
@@ -117,6 +120,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
 										Information Technology
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
 							<div id="collapseFour" class="panel-collapse collapse">
@@ -131,6 +135,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
 										International Operations &amp; Technology
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
 							<div id="collapseFive" class="panel-collapse collapse">
@@ -145,6 +150,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
 										Media Products &amp; Advanced Technology
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
 							<div id="collapseSix" class="panel-collapse collapse">
@@ -159,6 +165,7 @@
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 										Studio Operations
 									</a>
+									<i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
 								</h4>
 							</div>
 							<div id="collapseSeven" class="panel-collapse collapse">
@@ -169,35 +176,86 @@
 						</div>
 					</div>
 				</div>
+				<div class="hidden-xs  col-xs-2">
+					<div class="jumbotron">
+						<video width="100%" poster="images/poster.png" id="videoPlayer">
+							<source src="videos/STEM.mp4" type="video/mp4">
+							</video>
+							<div class="videoControls">
+								<a href="#" class="btnPlay"><span class="glyphicon glyphicon-play"></span></a>
+								<div class="videoTime">
+									<span class="current"></span>/<span class="duration"></span>
+								</div>
+								<a href="#" class="btnMute"><span class="glyphicon glyphicon-volume-up"></span></a>
+								<a href="#" class="btnFullscreen"><span class="glyphicon glyphicon-fullscreen"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	
-
 </body>
 </html>
 
 <script type="text/javascript">
 	$(document).ready(function() {
 		resizePrallax();
-		$('#OTS').plaxify({"xRange":10,"yRange":10});
-		$('#gray').plaxify({"xRange":5,"yRange":5,"invert":true});
-		$.plax.enable();;
-		// To Actualy Center Image
-		setTimeout(centerOTSLogo, 10);
-	});
-
-	$(window).resize(function() {
-		$.plax.disable();
-		resizePrallax();
-		centerOTSLogo();
+		$('#OTS').plaxify({"xRange":20,"yRange":20});
+		$('#gray').plaxify({"xRange":10,"yRange":10,"invert":true});
 		$.plax.enable();
+		// To Actualy Center Image
+		setTimeout(centerOTSLogo, 100);
+		$('#accordion').on('hidden.bs.collapse', toggleChevron);
+		$('#accordion').on('shown.bs.collapse', toggleChevron);
+
+		// Set Up Video
+		var videoPlayer = $('#videoPlayer');
+
+		$('.btnPlay').click(function() {
+			if(videoPlayer[0].paused) {
+				videoPlayer[0].play();
+				$('.glyphicon-play').attr('class', 'glyphicon glyphicon-pause');
+			}
+			else {
+				videoPlayer[0].pause();
+				$('.glyphicon-pause').attr('class', 'glyphicon glyphicon-play');
+			}
+			return false;
+		})
+		videoPlayer.on('timeupdate', function() {
+			$('.current').text(Math.round(videoPlayer[0].currentTime));
+		});
+		videoPlayer.on('loadedmetadata', function() {
+			$('.duration').text(Math.round(videoPlayer[0].duration));
+		});
+		$('.btnMute').click(function() {
+			if (videoPlayer[0].muted == false) {
+				videoPlayer[0].muted = true;
+				$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
+			} else {
+				videoPlayer[0].muted = false;
+				$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
+			}
+		});
+		$('.btnFullscreen').on('click', function() {
+			videoPlayer[0].webkitEnterFullscreen();
+			videoPlayer[0].mozRequestFullScreen();
+			return false;
+		});
+
 	});
 
-	function resizePrallax(){
-		var potentialSize = $(window).height() * $(window).width() / (400 * 3);
-		var newSize = potentialSize > 400 ? 400 : potentialSize;
+$(window).resize(function() {
+	$.plax.disable();
+	resizePrallax();
+	centerOTSLogo();
+	$.plax.enable();
+});
+
+function resizePrallax(){
+	var potentialSize = $(window).height() * $(window).width() / (400 * 3);
+	var newSize = potentialSize > 400 ? 400 : potentialSize;
 		//console.log(newSize + " " + potentialSize);
 		//var newHeight = $(document).height * .20;
 		$("#shell").height(newSize);
@@ -211,6 +269,13 @@
 		$("#OTS").center(true);
 		//$('#OTS').css({top: (windowHeight/2) - ($('#OTS').height()/2) + "px", left: (windowWidth/2) - ($('#OTS').width()/2) + "px", position:'absolute'});
 
+	}
+
+	function toggleChevron(e) {
+		$(e.target)
+		.prev('.panel-heading')
+		.find("i.indicator")
+		.toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
 	}
 
 	jQuery.fn.center = function(parent) {

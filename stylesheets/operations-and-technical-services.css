@@ -1,63 +1,105 @@
 /*!
 	Jack Murdock O&TS CSS
 	NBCUniversal Careers Page
-*/
-* {
-	margin: 0px;
-	padding: 0px;
-}
-div#shell {
-	display: block;
-	position: relative;
-	margin: 5px auto;
-	height: 400px;
-	width: 100%;
-	overflow: hidden;
-	/*background-color: #000000*/
-	/*max-height:100%;*/
-	/*max-width: calc(100% - 200px);*/
-}
-div#shell{
-	z-index: 1;
-}  
-.locations{
-	background-image: linear-gradient(90deg, #ffffff, #4B0082);
-	border-radius: 20px;
-}
-img#OTS {
-	position: absolute;
-	/*top: calc();*/
-	/*left: calc();*/
-	z-index: 2;
-	max-height: 50%;
-	max-width: 50%;
-	width: auto;
+	*/
+	@import url("bootstrap.min.css");
 
-}
-img#gray {
-	position: absolute;
-	top: -10px;
-	left: -10px;
-	z-index: 1;
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	div#shell {
+		display: block;
+		position: relative;
+		margin: 5px auto;
+		height: 400px;
+		width: 100%;
+		overflow: hidden;
+		/*background-color: #000000*/
+		/*max-height:100%;*/
+		/*max-width: calc(100% - 200px);*/
+	}
+	div#shell{
+		z-index: 1;
+	}  
+	.locations{
+		background-image: linear-gradient(90deg, #ffffff, #4B0082);
+		border-radius: 20px;
+	}
+	img#OTS {
+		position: absolute;
+		/*top: calc();*/
+		/*left: calc();*/
+		z-index: 2;
+		max-height: 60%;
+		max-width: 60%;
+		width: auto;
 
-}
-.btn-apply{
-	background-color: #4B0082;
-	border-color: #0000000;
-	color: #ffffff;
-	text-shadow: -1px 2px 3px #555;
-}
-.btn-apply:hover{
-	background-color: #7D26CD;
-	border-color: #938DE7;
-	color: #ffffff;
-	text-shadow: -1px 2px 3px #555;
-}
-ul{
-	list-style: none;
-}
-li{
-	color: #ffffff;
-	text-shadow: -1px 2px 3px #555;
-	padding-right: 10px;
-}
+	}
+	img#gray {
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		z-index: 1;
+
+	}
+	.btn-apply{
+		background-color: #4B0082;
+		border-color: #0000000;
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+	}
+	.btn-apply:hover{
+		background-color: #7D26CD;
+		border-color: #938DE7;
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+	}
+	ul{
+		list-style: none;
+	}
+	li{
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+		padding-right: 10px;
+	}
+
+	/* For Drop Down Add Some color and effects*/
+	.panel-default{
+		max-width: 500px;
+	}
+	.panel-default > .panel-heading{
+		background-color: #4B0082;
+		color: #ffffff;
+		/*text-shadow: rgb(187, 187, 187) 0px 1px 0px,
+		rgb(181, 181, 181) 0px 2px 0px;*/
+	}
+
+
+	/* For Video Player */
+	    .jumbotron {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .videoControls {
+        width: 100%;
+        font-size: 30px;
+    }
+    .videoControls span, .videoControls div {
+        display: inline-block;
+        color: #999;
+    }
+    .btnMute, .btnFullscreen {
+        float: right;
+        padding-left: 20px;
+        margin-right: 20px;
+        color: #999;
+    }
+    .btnPlay {
+        padding-right: 20px;
+        margin-left: 20px;
+        color: #999;
+    }
+    .glyphicon:hover {
+        color: #555;
+    }
