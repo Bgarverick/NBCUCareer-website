@@ -43,10 +43,10 @@ git pull
 3. Open the file with a text editor 
 4. Under your email on line 8 add 
 ```
-	[http] 
-		proxy = http://proxy.inbcu.com:80 
-	[https]
-		proxy = https://proxy.inbcu.com:80
+[http] 
+	proxy = http://proxy.inbcu.com:80 
+[https]
+	proxy = https://proxy.inbcu.com:80
 ```
 5. Save and close the text editor
 6. Open the gui and navigate to clone and click NBCUCareer-website
