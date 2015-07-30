@@ -72,6 +72,7 @@
 	.panel-default > .panel-heading{
 		background-color: #4B0082;
 		color: #ffffff;
+		cursor: pointer;
 		/*text-shadow: rgb(187, 187, 187) 0px 1px 0px,
 		rgb(181, 181, 181) 0px 2px 0px;*/
 	}

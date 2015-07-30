@@ -11,8 +11,6 @@
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 	<script src="scripts/plax.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
-	<link href="assets/css/video-default.css" rel="stylesheet">
-	<script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
 	<title>O&amp;TS</title>
 	<link rel="stylesheet" href="stylesheets/operations-and-technical-services.css">
 
@@ -72,7 +70,7 @@
 				<div class="col-sm-6">
 					<div class="panel-group accordion-caret" id="accordion">
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 										Business Services
@@ -87,7 +85,7 @@
 							</div>
 						</div>
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 										East Coast TV  &amp; On-Air Operations
@@ -102,7 +100,7 @@
 							</div>
 						</div>
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 										Field &amp; Production Operations
@@ -117,7 +115,7 @@
 							</div>
 						</div>
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
 										Information Technology
@@ -132,7 +130,7 @@
 							</div>
 						</div>
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
 										International Operations &amp; Technology
@@ -147,7 +145,7 @@
 							</div>
 						</div>
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
 										Media Products &amp; Advanced Technology
@@ -162,7 +160,7 @@
 							</div>
 						</div>
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 								<h4 class="panel-title">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 										Studio Operations
@@ -224,6 +222,10 @@
 		setTimeout(centerOTSLogo, 100);
 		$('#accordion').on('hidden.bs.collapse', toggleChevron);
 		$('#accordion').on('shown.bs.collapse', toggleChevron);
+
+		//Randomize Color
+		randomizeColors();
+
 
 		// Set Up Video
 		var videoPlayer = $('#videoPlayer');
@@ -308,4 +310,10 @@ function resizePrallax(){
 		return this;
 	}
 
+	function randomizeColors(){
+		$('.panel-heading').each(function(){
+			var randomColor = Math.floor(Math.random()*16777215).toString(16);
+			$(this).css('background-color', "#" + randomColor);
+		});
+	}
 </script>
