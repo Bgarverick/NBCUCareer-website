@@ -4,6 +4,7 @@
 @kcajmagic
 - [ ] CSS
 - [ ] HTML
+
 ##### Issues still on O&TS page
 1.  [ ] New Text
 2.  [ ] Campus 2 Career Logo 
@@ -11,7 +12,7 @@
 4.  [ ] Pictures in dropdowns 
 5.  [ ] Make the bar clickable not just name on bar
 
-These are some issues I ( @Bgarverick think we need to resolve on the current O&TS Page
+These are some issues I (Ben) @Bgarverick think we need to resolve on the current O&TS Page
 
 #### NexTech Webpage
 
