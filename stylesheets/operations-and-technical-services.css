@@ -12,6 +12,7 @@
 		display: block;
 		position: relative;
 		margin: 5px auto;
+		min-height: 250px;
 		height: 400px;
 		width: 100%;
 		overflow: hidden;
@@ -45,6 +46,7 @@
 	}
 	div#share {
 		position: absolute;
+		padding: 10px;
 		top: 10px;
 		right: 10px;
 		z-index: 2;
@@ -85,29 +87,29 @@
 
 
 	/* For Video Player */
-	    .jumbotron {
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .videoControls {
-        width: 100%;
-        font-size: 30px;
-    }
-    .videoControls span, .videoControls div {
-        display: inline-block;
-        color: #999;
-    }
-    .btnMute, .btnFullscreen {
-        float: right;
-        padding-left: 20px;
-        margin-right: 20px;
-        color: #999;
-    }
-    .btnPlay {
-        padding-right: 20px;
-        margin-left: 20px;
-        color: #999;
-    }
-    .glyphicon:hover {
-        color: #555;
-    }
+	.jumbotron {
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.videoControls {
+		width: 100%;
+		font-size: 30px;
+	}
+	.videoControls span, .videoControls div {
+		display: inline-block;
+		color: #999;
+	}
+	.btnMute, .btnFullscreen {
+		float: right;
+		padding-left: 20px;
+		margin-right: 20px;
+		color: #999;
+	}
+	.btnPlay {
+		padding-right: 20px;
+		margin-left: 20px;
+		color: #999;
+	}
+	.glyphicon:hover {
+		color: #555;
+	}
