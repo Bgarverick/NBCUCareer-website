@@ -8,6 +8,17 @@
 		margin: 0px;
 		padding: 0px;
 	}
+	body ::after {
+		content: "";
+		background: url('../images/30-Rockefeller-Plaza.jpg') center center no-repeat;
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+	}
 	div#shell {
 		display: block;
 		position: relative;
@@ -16,6 +27,7 @@
 		height: 400px;
 		width: 100%;
 		overflow: hidden;
+
 		/*background-color: #000000*/
 		/*max-height:100%;*/
 		/*max-width: calc(100% - 200px);*/
