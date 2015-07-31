@@ -1,6 +1,6 @@
 # NBCU Website
 ## TODO
-#### O&TS Webpage **-> Jack**
+#### O&TS Webpage -> Jack
 - [ ] CSS
 - [ ] HTML
 
@@ -13,12 +13,12 @@
 
 These are some issues I (Ben) @Bgarverick think we need to resolve on the current O&TS Page
 
-#### NexTech Webpage
+#### NexTech Webpage -> TJ
 
 - [ ] CSS
 - [ ] HTML
 
-#### C2C
+#### C2C -> Mohit
 - [ ] CSS
 - [ ] HTML
 
