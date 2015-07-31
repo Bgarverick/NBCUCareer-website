@@ -53,6 +53,43 @@ git pull
 7. Clone it to a file on your computer
 8. Push it by clicking sync in the gui
 
+## Git Commands
+
+####Create your own Branch
+*use your last name as your branch name*
+```
+git branch <lastname>
+```
+
+####Get Files From the master branch
+```
+git pull origin master
+```
+
+####Add Changed Files
+```
+git add --all
+```
+
+####Commit changed Files
+```
+git commmit -m "<message>"
+```
+
+####Push Changed files to server
+```
+git push origin <branchname>
+```
+
+####Merge branch with master
+*Use when done with a feature*
+*REMEMBER TO Push Commited files first to your branch*
+```
+git checkout master
+git merge <branchname>
+```
+_If you have a merge conflit. I have not ran into it yet so there is not documentation._
+
 
 
 								
