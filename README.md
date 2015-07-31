@@ -1,7 +1,6 @@
 # NBCU Website
 ## TODO
-#### O&TS Webpage
-@kcajmagic
+#### O&TS Webpage **-> Jack**
 - [ ] CSS
 - [ ] HTML
 
