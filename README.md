@@ -82,8 +82,8 @@ git push origin <branchname>
 ```
 
 ####Merge branch with master
-*Use when done with a feature*
-*REMEMBER TO Push Commited files first to your branch*
+ - **Use when done with a feature**
+ - **REMEMBER TO Push Commited files first to your branch**
 ```
 git checkout master
 git merge <branchname>
