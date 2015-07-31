@@ -54,11 +54,13 @@ git pull
 8. Push it by clicking sync in the gui
 
 ## Git Commands
-
+** All Commands are Case Sensitive**
 ####Create your own Branch
 *use your last name as your branch name*
 ```
-git branch <lastname>
+git branch <branchname>
+git checkout <branchname>
+git push <branchname>
 ```
 
 ####Get Files From the master branch
