@@ -54,7 +54,9 @@ git pull
 8. Push it by clicking sync in the gui
 
 ## Git Commands
+
 ** All Commands are Case Sensitive**
+
 ####Create your own Branch
 *use your last name as your branch name*
 ```
