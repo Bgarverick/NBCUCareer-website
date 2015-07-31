@@ -55,7 +55,7 @@ git pull
 
 ## Git Commands
 
-** All Commands are Case Sensitive**
+**All Commands are Case Sensitive**
 
 ####Create your own Branch
 *use your last name as your branch name*
