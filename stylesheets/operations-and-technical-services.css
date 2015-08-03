@@ -35,17 +35,27 @@
 		position: absolute;
 		/*top: calc();*/
 		/*left: calc();*/
-		z-index: 2;
+		z-index: 5;
 		max-height: 60%;
 		max-width: 60%;
 		width: auto;
 
 	}
+	img#transparentOTS{
+		position: absolute;
+		bottom: 200px;
+		right: -20px;
+		z-index: 2;
+		max-height: 100%;
+		max-width: 100%;
+		width: auto;
+	}
 	img#gray {
 		position: absolute;
-		top: -10px;
-		left: -10px;
+		top: -50px;
+		left: -50px;
 		z-index: 1;
+		height: auto;
 
 	}
 	div#share {

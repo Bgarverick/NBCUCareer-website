@@ -27,6 +27,7 @@
 				<div id="shell">
 					<div id="share"></div>
 					<img src="images/OTS-LOGO.png" id="OTS" width="40%">
+					<img src="images/Transparent-Logo-Corner.png" id="transparentOTS" width="30%">
 					<img src="images/light-gray-gradient.jpg" id="gray" width="120%" height="120%">
 				</div>
 			</div>
@@ -240,8 +241,8 @@
 	$(document).ready(function() {
 		resizePrallax();
 		$('#OTS').plaxify({"xRange":20,"yRange":20});
-		//$('#share').plaxify({"xRange":30,"yRange":30});
-		$('#gray').plaxify({"xRange":10,"yRange":10,"invert":true});
+		$('#transparentOTS').plaxify({"xRange":40,"yRange":40});
+		$('#gray').plaxify({"xRange":50,"yRange":50,"invert":true});
 		$.plax.enable();
 		// To Actualy Center Image
 		setTimeout(centerOTSLogo, 100);
@@ -309,7 +310,6 @@ function resizePrallax(){
 		//console.log(newSize + " " + potentialSize);
 		//var newHeight = $(document).height * .20;
 		$("#shell").height(newSize);
-		//$("shell")
 	}
 
 	function centerOTSLogo(){
@@ -317,9 +317,12 @@ function resizePrallax(){
 		var windowWidth = $(window).width();
 
 		$("#OTS").center(true);
-		//$("#share").center(true);
-		//$('#OTS').css({top: (windowHeight/2) - ($('#OTS').height()/2) + "px", left: (windowWidth/2) - ($('#OTS').width()/2) + "px", position:'absolute'});
-
+		
+		$('#transparentOTS').css({
+			"position": "absolute",
+			"top": (($($('#transparentOTS').parent()).height() - ($('#transparentOTS').height() - 50)) + "px"),
+			"left": (($($('#transparentOTS').parent()).width() - ($('#transparentOTS').width() - 50))+ "px")
+		});
 	}
 
 	function toggleChevron(e) {
@@ -354,6 +357,6 @@ function resizePrallax(){
 	function setImage(image){
 		$('#contentImage').attr(
 			'src', image
-		);
+			);
 	}
 </script>
