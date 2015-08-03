@@ -79,10 +79,13 @@
 	}
 	ul{
 		list-style: none;
+		font-size: 20px;
+		font-weight: bold;
+		text-shadow: -1px 1px 1px #555;
 	}
 	li{
-		color: #ffffff;
-		text-shadow: -1px 2px 3px #555;
+		font-size: 17px;
+		color: black;
 		padding-right: 10px;
 	}
 
@@ -149,4 +152,13 @@
 	}*/
 	blockquote p {
 		display: inline;
+	}
+	p.credo {
+		color: purple;
+		font-size: 30px;
+		text-align: center;
+	}
+	h1.credo {
+		text-align: center;
+		font-weight: bold;
 	}
