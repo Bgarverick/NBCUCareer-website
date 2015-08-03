@@ -5,10 +5,10 @@
 - [ ] HTML
 
 ##### Issues still on O&TS page
-1.  [ ] New Text
+1.  [x] New Text
 2.  [ ] Campus 2 Career Logo 
 3.  [x] Share button
-4.  [ ] Pictures in dropdowns 
+4.  [x] Pictures in dropdowns 
 5.  [x] Make the bar clickable not just name on bar
 
 These are some issues I (Ben) @Bgarverick think we need to resolve on the current O&TS Page
