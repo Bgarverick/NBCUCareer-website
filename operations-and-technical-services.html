@@ -20,6 +20,9 @@
 
 </head>
 <body>
+	<div id="bg">
+	<img src="images/30-Rockefeller-Plaza.jpg" alt="">
+	</div>
 	<div class="container-fluid">
 		<!-- Parallax Effect Header -->
 		<div class="row">
@@ -178,7 +181,7 @@
 							<div id="collapseSeven" class="panel-collapse collapse">
 								<div class="panel-body">
 									Is that Tom Hanks?! Look over there it&#39;s Amy Schmuer! Studio operations is the glue behind the scenes holding all of NBCUniversal&#39;s backlots and film production mobile units together. Their portfolio is by far the most diverse with groups responsible for stages and backlot locations, cutting-edge production and post-production facilities and services, special events, and marketing. Oh but it doesn&#39;t stop there! Studio Operations is responsible for providing office and production support facilities, as well as maintaining all buildings, grounds, roads, and utility infrastructure. The list goes on and on. Working together with NBCUniversal&#39;s theme park division to maintain rides and spaces in Universal Hollywood. What about films and shows after they&#39;re released? Or the props you see on movies and TV shows? Those are all kept in storage maintained by studio Operations. As stated earlier this divison of NBCUniversal keeps Universal Hollywood running at full speed. There is not a department on the backlots of Universal that studios operations does not touch in some way. NBCUniversal Studio Operations is considered the leader in its field in all it does. 
- 
+
 								</div>
 							</div>
 						</div>
@@ -262,24 +265,24 @@
 		// 	$('.current').text(Math.round(videoPlayer[0].currentTime));
 		// });	
 
-		videoPlayer.on('loadedmetadata', function() {
-			$('.duration').text(Math.round(videoPlayer[0].duration));
-		});
-		$('.btnMute').click(function() {
-			if (videoPlayer[0].muted == false) {
-				videoPlayer[0].muted = true;
-				$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
-			} else {
-				videoPlayer[0].muted = false;
-				$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
-			}
-		});
-		$('.btnFullscreen').on('click', function() {
-			videoPlayer[0].webkitEnterFullscreen();
-			videoPlayer[0].mozRequestFullScreen();
-			return false;
-		});
-	});
+videoPlayer.on('loadedmetadata', function() {
+	$('.duration').text(Math.round(videoPlayer[0].duration));
+});
+$('.btnMute').click(function() {
+	if (videoPlayer[0].muted == false) {
+		videoPlayer[0].muted = true;
+		$('.glyphicon-volume-up').attr('class', 'glyphicon glyphicon-volume-off');
+	} else {
+		videoPlayer[0].muted = false;
+		$('.glyphicon-volume-off').attr('class', 'glyphicon glyphicon-volume-up');
+	}
+});
+$('.btnFullscreen').on('click', function() {
+	videoPlayer[0].webkitEnterFullscreen();
+	videoPlayer[0].mozRequestFullScreen();
+	return false;
+});
+});
 
 $(window).resize(function() {
 	$.plax.disable();
