@@ -26,11 +26,11 @@
 	}
 	div#shell{
 		z-index: 1;
-	}  
+	}
 	.locations{
 		background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1), #4B0082);
 		border-radius: 20px;
-	
+
 	}
 	img#OTS {
 		position: absolute;
@@ -163,6 +163,16 @@
 			font-weight: bold;
 		}
 
+		p.qut{
+
+		margin: 0 auto;
+		height: 100%;
+		float: left;
+		/*width: auto;*/
+		padding: 0.5em 10px;
+	}
+
+
 		div.row > ul{
 			list-style: none;
 			font-size: 20px;
@@ -176,5 +186,3 @@
 			color: black;
 			padding-right: 10px;
 		}
-
-
