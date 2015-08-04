@@ -88,10 +88,11 @@
 	}
 
 	/* For Drop Down Add Some color and effects*/
-	.panel-default{
+	/*.panel-default{
 		min-width: 400px;
 		/*max-width: 500px;*/
 	}
+	*/
 	.panel-default > .panel-heading{
 		background-color: #4B0082;
 		color: #ffffff;
