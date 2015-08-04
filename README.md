@@ -13,9 +13,9 @@ https://rawgit.com/Bgarverick/NBCUCareer-website/master/operations-and-technical
 
 ##### Issues still on O&TS page
 1.  [x] New Text
-2.  [ ] Campus 2 Career Logo 
+2.  [ ] Campus 2 Career Logo
 3.  [x] Share button
-4.  [x] Pictures in dropdowns 
+4.  [x] Pictures in dropdowns
 5.  [x] Make the bar clickable not just name on bar
 
 These are some issues I (Ben) @Bgarverick think we need to resolve on the current O&TS Page
@@ -26,8 +26,8 @@ These are some issues I (Ben) @Bgarverick think we need to resolve on the curren
 - [ ] HTML
 
 #### C2C -> Mohit
-- [ ] CSS
-- [ ] HTML
+- [x] CSS
+- [x] HTML
 
 ## How to Run
 For thouse who want to see how it looks. Download the zip file. And run the html file in question. For example if you want to see teh O&TS page run operations-and-technical-services.html
@@ -46,11 +46,11 @@ git pull
 ## How To use the gui with Firewall
 1. Start by showing hidden files and folders, to do this visit: http://windows.microsoft.com/en-us/windows/show-hidden-files#show-hidden-files=windows-7
 2. locate the .gitconfig under your username on your machine
-3. Open the file with a text editor 
+3. Open the file with a text editor
 4. At the end of the file add the following lines
 ```
-[http] 
-	proxy = http://proxy.inbcu.com:80 
+[http]
+	proxy = http://proxy.inbcu.com:80
 [https]
 	proxy = https://proxy.inbcu.com:80
 ```
@@ -99,7 +99,3 @@ git checkout master
 git merge <branchname>
 ```
 _If you have a merge conflit. I have not ran into it yet so there is not documentation._
-
-
-
-								
