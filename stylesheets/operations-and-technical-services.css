@@ -68,7 +68,7 @@
 	}
 	.btn-apply{
 		background-color: #4B0082;
-		border-color: #0000000;
+		border-color: #000000;
 		color: #ffffff;
 		text-shadow: -1px 2px 3px #555;
 	}
@@ -95,13 +95,16 @@
 	*/
 	.panel-default > .panel-heading{
 		background-color: #4B0082;
-		color: #ffffff;
+		color: #ffffff !important;
 		cursor: pointer;
 		min-width: 400px;
 		/*text-shadow: rgb(187, 187, 187) 0px 1px 0px,
 		rgb(181, 181, 181) 0px 2px 0px;*/
 	}
 
+	.accordion-toggle{
+		color: #ffffff !important;
+	}
 
 	/* For Video Player */
 	.jumbotron {
@@ -142,47 +145,21 @@
 		quotes: "\201C""\201D""\2018""\2019";
 		column-gap: 40px;
 	}
-	/*blockquote:before {
-		color: #ccc;
-		content: open-quote;
-		font-size: 4em;
-		line-height: 0.1em;
-		margin-right: 0.25em;
-		vertical-align: -0.4em;
-		}*/
-		blockquote p {
-			display: inline;
-		}
-		p.credo {
-			color: purple;
-			font-size: 30px;
-			text-align: center;
-		}
-		h1.credo {
-			text-align: center;
-			font-weight: bold;
-		}
 
-		p.qut{
-
-		margin: 0 auto;
-		height: 100%;
-		float: left;
-		/*width: auto;*/
-		padding: 0.5em 10px;
+	blockquote p {
+		display: inline;
 	}
 
-
-		div.row > ul{
-			list-style: none;
-			font-size: 20px;
-			font-weight: bold;
-			text-shadow: -1px 1px 1px #555;
-		}
-		div.row > li{
-			color: #ffffff;
-			text-shadow: -1px 2px 3px #555;
-			font-size: 17px;
-			color: black;
-			padding-right: 10px;
-		}
+	div.row > ul{
+		list-style: none;
+		font-size: 20px;
+		font-weight: bold;
+		text-shadow: -1px 1px 1px #555;
+	}
+	div.row > li{
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+		font-size: 17px;
+		color: black;
+		padding-right: 10px;
+	}

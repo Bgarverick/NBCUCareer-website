@@ -105,12 +105,8 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-5 col-md-push-7">
-
-
 					<img id="contentImage" src="images/OTS-LOGO.png" class="img-thumbnail" width="100%" height="auto" /> 
-
 					<br>
-
 				</div>
 				<div class="col-md-7 col-md-pull-5">
 					<div class="panel-group accordion-caret" id="accordion">
@@ -374,9 +370,10 @@ function resizePrallax(){
 	}
 
 	function randomizeColors(){
+		var indexColor = 0;
 		$('.panel-heading').each(function(){
-			var randomColor = Math.floor(Math.random()*16777215).toString(16);
-			$(this).css('background-color', "#" + randomColor);
+			$(this).css('background-color', getColor(indexColor));
+			indexColor++;
 		});
 	}
 
@@ -385,5 +382,31 @@ function resizePrallax(){
 		$('#contentImage').attr(
 			'src', image
 			);
+	}
+
+	function getColor(index){
+		switch(index){
+			case 0:
+			return '#b300b3';
+			case 1:
+			return '#6100e2';
+			case 2:
+			return '#559500';
+			case 3:
+			return '#2553e4';
+			case 4:
+			return '#b3005a';
+			case 5:
+			return '#8b0095';
+			case 6:
+			return '#d200e2';
+			case 7:
+			return '#00b3b3';
+			case 8:
+			return '#ff8000';
+			default:
+			return '#' + Math.floor(Math.random()*16777215).toString(16);
+
+		}
 	}
 </script>

@@ -1,185 +1,137 @@
 /*!
-    Jack Murdock O&TS CSS
-    NBCUniversal Careers Page
-    */
-    @import url("bootstrap.min.css");
+	Jack Murdock NexTech CSS
+	NBCUniversal Careers Page
+	*/
+	@import url("bootstrap.min.css");
 
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
-    body{
-        background-image: url("../images/confectionary.png");
-        background-repeat: repeat;
-    }
-    div#shell {
-        display: block;
-        position: relative;
-        margin: 5px auto;
-        min-height: 250px;
-        height: 400px;
-        width: 100%;
-        overflow: hidden;
-        /*background-color: #000000*/
-        /*max-height:100%;*/
-        /*max-width: calc(100% - 200px);*/
-    }
-    div#shell{
-        z-index: 1;
-    }
-    .locations{
-        background-image: linear-gradient(90deg, #ffffff, #4B0082);
-        border-radius: 20px;
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		background-image: url("../images/confectionary.png");
+		background-repeat: repeat;
+	}
+	div#shell {
+		display: block;
+		position: relative;
+		margin: 5px auto;
+		min-height: 250px;
+		height: 400px;
+		width: 100%;
+		overflow: hidden;
+		/*background-color: #000000*/
+		/*max-height:100%;*/
+		/*max-width: calc(100% - 200px);*/
+	}
+	div#shell{
+		z-index: 1;
+	}
+	.locations{
+		background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1), #4B0082);
+		border-radius: 20px;
+	}
+	img#logo {
+		position: absolute;
+		/*top: calc();*/
+		/*left: calc();*/
+		z-index: 2;
+		max-height: 30%;
+		max-width: 30%;
+		width: auto;
 
-        padding: 5px 15px;
-    }
-    img#logo {
-        position: absolute;
-        /*top: calc();*/
-        /*left: calc();*/
-        z-index: 2;
-        max-height: 30%;
-        max-width: 30%;
-        width: auto;
+	}
+	img#gray {
+		position: absolute;
+		top: -50px;
+		left: -50px;
+		z-index: 1;
 
-    }
-    img#gray {
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        z-index: 1;
+	}
+	div#share {
+		position: absolute;
+		padding: 10px;
+		top: 10px;
+		right: 10px;
+		z-index: 2;
+	}
+	.btn-apply{
+		background-color: #4B0082;
+		border-color: #000000;
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+	}
+	.btn-apply:hover{
+		background-color: #7D26CD;
+		border-color: #938DE7;
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+	}
+	ul{
+		list-style: none;
+	}
+	li{
+		color: #ffffff;
+		text-shadow: -1px 2px 3px #555;
+		padding-right: 10px;
+	}
 
-    }
-    div#share {
-        position: absolute;
-        padding: 10px;
-        top: 10px;
-        right: 10px;
-        z-index: 2;
+	/* For Drop Down Add Some color and effects*/
+	.panel-default > .panel-heading{
+		background-color: #4B0082;
+		color: #ffffff;
+		cursor: pointer;
+		min-width: 400px;
+		/*text-shadow: rgb(187, 187, 187) 0px 1px 0px,
+		rgb(181, 181, 181) 0px 2px 0px;*/
+	}
 
-        padding-right: 30%;
-    }
-    .btn-apply{
-        background-color: #4B0082;
-        border-color: #0000000;
-        color: #ffffff;
-        text-shadow: -1px 2px 3px #555;
-    }
-    .btn-apply:hover{
-        background-color: #7D26CD;
-        border-color: #938DE7;
-        color: #ffffff;
-        text-shadow: -1px 2px 3px #555;
-    }
-    ul{
-        list-style: none;
-    }
-    li{
-        color: #ffffff;
-        text-shadow: -1px 2px 3px #555;
-        padding-right: 10px;
-    }
+	.accordion-toggle{
+		color: #ffffff !important;
+	}
 
-    /* For Drop Down Add Some color and effects*/
-    .panel-default{
-        min-width: 200px;
-        /*max-width: 500px;*/
-    }
-    .panel-default > .panel-heading{
-        background-color: #4B0082;
-        color: #ffffff;
-        cursor: pointer;
-        /*text-shadow: rgb(187, 187, 187) 0px 1px 0px,
-        rgb(181, 181, 181) 0px 2px 0px;*/
-    }
-
-
-    /* For Video Player */
-    .jumbotron {
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .videoControls {
-        width: 100%;
-        font-size: 30px;
-    }
-    .videoControls span, .videoControls div {
-        display: inline-block;
-        color: #999;
-    }
-    .btnMute, .btnFullscreen {
-        float: right;
-        padding-left: 20px;
-        margin-right: 20px;
-        color: #999;
-    }
-    .btnPlay {
-        padding-right: 20px;
-        margin-left: 20px;
-        color: #999;
-    }
-    .glyphicon:hover {
-        color: #555;
-    }
+	/* For Video Player */
+	.jumbotron {
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.videoControls {
+		width: 100%;
+		font-size: 30px;
+	}
+	.videoControls span, .videoControls div {
+		display: inline-block;
+		color: #999;
+	}
+	.btnMute, .btnFullscreen {
+		float: right;
+		padding-left: 20px;
+		margin-right: 20px;
+		color: #999;
+	}
+	.btnPlay {
+		padding-right: 20px;
+		margin-left: 20px;
+		color: #999;
+	}
+	.glyphicon:hover {
+		color: #555;
+	}
 
 
+	blockquote {
+		background-image: linear-gradient(90deg, #f9f9f9, #ffffff);
+		border-left: 10px solid #000;
+		margin: 0 auto;
+		height: 100%;
+		float: left;
+		/*width: auto;*/
+		/*padding: 0.5em 10px;*/
+		quotes: "\201C""\201D""\2018""\2019";
+		column-gap: 40px;
+	}
 
+	blockquote p {
+		display: inline;
+	}
 
-
-
-
-
-
-
-    .cheaty-navbar-container {
-        width: 100%;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .cheaty-navbar {
-        height: 64px;
-        min-width: 100%;
-        width: 2534px;
-
-        position: relative;
-        left: 50%;
-        -webkit-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-        transform: translate(-50%,0);
-
-    }
-
-    @media only screen and (max-width : 800px) {
-        .cheaty-navbar {
-            display: none;
-        }
-    }
-
-
-    .page-content {
-        padding: 0 30%;
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 1600px) {
-        .page-content {
-            padding: 0 20%;
-        }
-
-        .div#share {
-            padding: 0 20%;
-        }
-    }
-
-
-    @media only screen and (max-width : 1000px) {
-        .page-content {
-            padding: 0 10%;
-        }
-
-        div#share {
-            padding: 0 10%;
-        }
-        }
-    }
