@@ -60,6 +60,8 @@
 		border-color: #000000;
 		color: #ffffff;
 		text-shadow: -1px 2px 3px #555;
+
+        width: 100%;
 	}
 	.btn-apply:hover{
 		background-color: #7D26CD;
@@ -129,9 +131,10 @@
 		/*padding: 0.5em 10px;*/
 		quotes: "\201C""\201D""\2018""\2019";
 		column-gap: 40px;
+
+        margin-bottom: 10px;
 	}
 
 	blockquote p {
 		display: inline;
 	}
-
